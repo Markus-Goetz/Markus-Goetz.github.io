@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "air" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Markus Götz"
 title_separator          : "-"
 name                     : &name "Markus Götz"
@@ -26,7 +26,7 @@ author:
   avatar           : "mgoetz_square.jpg"
   name             : "Markus Götz"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Assistant Professor for Scalable and Efficient Machine Learning"
   location         : "Heilbronn"
   employer         : "Technical University Munich (TUM)"
   uri              : # URL
