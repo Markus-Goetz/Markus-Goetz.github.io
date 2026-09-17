@@ -21,7 +21,7 @@
           {% if teaser contains "://" %}
             "{{ teaser }}"
           {% else %}
-            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+            "{{ teaser | prepend: base_path }}"
           {% endif %}
           alt="{{ title }} logo" style="width: 100%; height: auto; border-radius: 4px;">
       </div>
@@ -43,10 +43,6 @@
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
-    {% endif %}
-
-    {% if post.github %}
-      <p><a href="{{ post.github }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> View repository on GitHub</a></p>
     {% endif %}
 
     <div style="clear: both;"></div>
