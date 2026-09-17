@@ -225,12 +225,12 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
+	software:
+	    output: true
+	    permalink: /software/:path/
+	datasets:
+	    output: true
+	    permalink: /datasets/:path/
 
 
 # These settings control how pages and collections are included in the site
