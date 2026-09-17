@@ -1,7 +1,7 @@
 ---
 title: "Deep learning for augmented process monitoring of scalable perovskite thin-film fabrication"
 collection: publications
-category: journals
+category: manuscripts
 permalink: /publication/2025-01-01-perovskite-process-monitoring
 excerpt: 'We combine deep learning with in-situ luminescence imaging to monitor and better understand the scalable fabrication process of perovskite thin films, enabling augmented, data-driven process control for photovoltaics manufacturing.'
 date: 2025-01-01

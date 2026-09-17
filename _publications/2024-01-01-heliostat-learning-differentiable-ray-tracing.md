@@ -1,7 +1,7 @@
 ---
 title: "Automatic heliostat learning for in situ concentrating solar power plant metrology with differentiable ray tracing"
 collection: publications
-category: journals
+category: manuscripts
 permalink: /publication/2024-01-01-heliostat-learning-differentiable-ray-tracing
 excerpt: 'We use differentiable ray tracing to automatically calibrate heliostats in situ, learning precise geometric alignment metrology for concentrating solar power plants directly from operational sensor data.'
 date: 2024-01-01

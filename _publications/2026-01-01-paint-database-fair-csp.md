@@ -1,7 +1,7 @@
 ---
 title: "The PAINT database for operational concentrating solar power plant data following FAIR data principles"
 collection: publications
-category: journals
+category: manuscripts
 permalink: /publication/2026-01-01-paint-database-fair-csp
 excerpt: 'We introduce PAINT, the first FAIR, open-access database of operational concentrating solar power tower plant data, providing 849 GB of heliostat, calibration, and weather data to accelerate AI-driven solar research.'
 date: 2026-01-01
