@@ -9,7 +9,7 @@ header:
   teaser: /images/software/propulate-logo.png
 ---
 
-<img src='/images/software/propulate-logo.png' alt='Propulate logo' style='max-width:200px;'>
+<img src='/images/software/propulate-logo.svg' alt='Propulate logo' style='max-width:200px;'>
 
 Propulate is a massively parallel, asynchronous evolutionary optimization framework designed for high-performance computing environments. It efficiently explores large search spaces, such as neural network hyperparameters, by decoupling individual evaluations across compute resources, avoiding the synchronization bottlenecks of traditional generational optimizers.
 

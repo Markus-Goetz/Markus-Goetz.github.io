@@ -9,7 +9,7 @@ header:
   teaser: /images/software/artist-logo.png
 ---
 
-<img src='/images/software/artist-logo.png' alt='ARTIST logo' style='max-width:200px;'>
+<img src='/images/software/artist-logo.svg' alt='ARTIST logo' style='max-width:200px;'>
 
 ARTIST is an AI-guided differentiable ray tracer for concentrating solar power plants. By making the ray tracing pipeline differentiable, ARTIST enables gradient-based calibration and optimization of heliostat fields directly from operational sensor data, supporting digital twins and improved solar flux prediction for solar tower plants.
 
