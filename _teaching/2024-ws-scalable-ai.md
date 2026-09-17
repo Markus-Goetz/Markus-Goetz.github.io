@@ -1,7 +1,7 @@
 ---
 title: "Scalable AI"
 collection: teaching
-type: "Course"
+type: "Master lecture"
 permalink: /teaching/2024-ws-scalable-ai
 venue: "Karlsruhe Institute of Technology, Department of Informatics"
 date: 2024-10-01
