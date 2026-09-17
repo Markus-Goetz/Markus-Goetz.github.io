@@ -1,0 +1,47 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+
+    {% if teaser %}
+      <div class="archive__item-teaser" style="float: left; width: 110px; margin: 0 1.25em 0.5em 0;">
+        <img src=
+          {% if teaser contains "://" %}
+            "{{ teaser }}"
+          {% else %}
+            "{{ teaser | prepend: base_path }}"
+          {% endif %}
+          alt="{{ title }} logo" style="width: 200px; height: auto; border-radius: 4px;">
+      </div>
+    {% endif %}
+
+    <h2 class="archive__item-title" itemprop="headline">
+      {% if post.github %}
+        <a href="{{ post.github }}" target="_blank" rel="noopener noreferrer">{{ title }}</a>
+      {% else %}
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      {% endif %}
+    </h2>
+
+    {% if post.excerpt and site.read_more != 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    {% elsif post.excerpt and site.read_more == 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+    {% endif %}
+
+    <div style="clear: both;"></div>
+
+  </article>
+</div>
