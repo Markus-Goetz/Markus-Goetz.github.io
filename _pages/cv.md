@@ -9,56 +9,50 @@ redirect_from:
 
 {% include base_path %}
 
+A PDF version of this CV is available [here](/files/cv.pdf).
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D. in Computational Engineering, University of Iceland, 2017 (in collaboration with the Jülich Supercomputing Centre)
+* M.Sc. in IT-Systems Engineering, University of Potsdam, 2014
+* B.Sc. in IT-Systems Engineering, University of Potsdam, 2010
 
-Work experience
+Work Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2026 – present: Assistant Professor for Scalable and Efficient Machine Learning, TUM Campus Heilbronn
+* 2020 – present: Group Leader, Helmholtz AI Energy, Karlsruhe Institute of Technology
+* 2018 – 2019: Postdoctoral Researcher, Karlsruhe Institute of Technology
+* 2014 – 2017: Doctoral Researcher, Forschungszentrum Jülich
+* 2012 – 2015: Software Developer, Hasso Plattner Institute
+* 2009 – 2010: Junior Software Developer, mental Images GmbH/NVIDIA
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+Research Interests
+======
+* Scalable and distributed machine learning for high-performance computing
+* Energy-efficient and low-rank neural network training
+* Scalable clustering, classification, and data analytics for scientific applications
+* Sustainable, reproducible research software development
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+Selected Grants
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Carl Zeiss Breakthroughs – WoW (2025), Principal Investigator
+* Helmholtz Association – SLRE (2025), Principal Investigator
+* EU Horizon Project – ASSAS (2022), Principal Investigator
+* Helmholtz Project Call – ARTIST (2024), Principal Investigator
+* HiRSE, indefinite base funding (2021–present), Principal Investigator
 
-Publications
+Selected Awards
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+* ACM Gordon Bell Award in Climate Modelling Finalist, 2026
+* Best Paper Award, PASC 2026
+* EU-SOLARIS Award, 2025
+* Best Paper Award, ICONIP 2024
+* Best Poster Award, HAICON 2025 & ISC 2025
+* Distinction Medal, Master Program, University of Potsdam, 2014
+
+Service and Leadership
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Helmholtz AI Coordinator, Karlsruhe
+* AI Spokesperson, Helmholtz Open Science Office
+* Program Committee: ECAI, ISC, Euro-Par
+* Reviewer: Nature Machine Intelligence, NeurIPS, ICML, ICLR, AAAI
