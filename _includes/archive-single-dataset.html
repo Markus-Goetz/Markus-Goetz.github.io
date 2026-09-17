@@ -28,7 +28,7 @@
     {% endif %}
 
     <h2 class="archive__item-title" itemprop="headline">
-        <a href="{{ paperurl }}" rel="permalink">{{ title }}</a>
+        <a href="{{ post.paperurl }}" rel="permalink">{{ title }}</a>
     </h2>
 
     {% if post.excerpt and site.read_more != 'enabled' %}
