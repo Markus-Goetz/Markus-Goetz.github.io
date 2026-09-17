@@ -1,0 +1,48 @@
+{% include base_path %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    {% if include.teaser %}
+      {% assign teaser = include.teaser %}
+    {% elsif post.teaser %}
+      {% assign teaser = post.teaser %}
+    {% elsif page.header.teaser %}
+      {% assign teaser = page.header.teaser %}
+    {% endif %}
+
+    {% if teaser %}
+      <div class="archive__item-teaser">
+        <img src="
+          {% if teaser contains "://" %}
+            {{ teaser }}
+          {% else %}
+            {{ teaser | prepend: "/images/" | prepend: base_path }}
+          {% endif %}
+        "
+        alt="">
+      </div>
+    {% endif %}
+
+    <h2 class="archive__item-title" itemprop="headline">
+      {% if post.link %}
+        <a href="{{ post.link }}">{{ post.title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% else %}
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+      {% endif %}
+    </h2>
+
+    {% if post.type or post.venue %}
+      <p class="archive__item-meta">
+        {% if post.type %}{{ post.type }}{% endif %}
+        {% if post.venue %}, <i>{{ post.venue }}</i>{% endif %}
+        {% if post.date %}, {{ post.date | date: "%B %Y" }}{% endif %}
+        {% if post.location %}<br>{{ post.location }}{% endif %}
+      </p>
+    {% endif %}
+
+    {% if post.excerpt %}
+      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>
+    {% endif %}
+
+  </article>
+</div>
