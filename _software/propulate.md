@@ -6,7 +6,7 @@ excerpt: 'A massively parallel and asynchronous evolutionary optimizer for hyper
 date: 2022-01-01
 github: 'https://github.com/Helmholtz-AI-Energy/propulate'
 header:
-  teaser: /images/software/propulate-logo.png
+  teaser: /images/software/propulate-logo.svg
 ---
 
 <img src='/images/software/propulate-logo.svg' alt='Propulate logo' style='max-width:200px;'>

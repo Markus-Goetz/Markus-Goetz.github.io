@@ -6,7 +6,7 @@ excerpt: 'An AI-guided, differentiable ray tracer for the operational optimizati
 date: 2024-01-01
 github: 'https://github.com/ARTIST-Association/ARTIST'
 header:
-  teaser: /images/software/artist-logo.png
+  teaser: /images/software/artist-logo.svg
 ---
 
 <img src='/images/software/artist-logo.svg' alt='ARTIST logo' style='max-width:200px;'>

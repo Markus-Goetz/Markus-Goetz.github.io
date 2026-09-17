@@ -6,7 +6,7 @@ excerpt: 'A lightweight tool for measuring and benchmarking the energy consumpti
 date: 2023-01-01
 github: 'https://github.com/Helmholtz-AI-Energy/perun'
 header:
-  teaser: /images/software/perun-logo.png
+  teaser: /images/software/perun-logo.svg
 ---
 
 <img src='/images/software/perun-logo.svg' alt='perun logo' style='max-width:200px;'>
